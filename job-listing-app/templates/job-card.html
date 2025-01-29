@@ -1,0 +1,134 @@
+<!-- templates/job-card.html -->
+<template id="job-card-template">
+  <article class="job-card" data-job-id="">
+    <div class="job-card__header">
+      <div class="job-card__company-logo">
+        <img src="" alt="" onerror="this.style.display='none'" />
+      </div>
+      <div class="job-card__info">
+        <h3 class="job-card__title"></h3>
+        <p class="job-card__company">
+          <span class="company-name"></span>
+          <i
+            class="fas fa-check-circle verified-icon"
+            title="Empresa Verificada"
+          ></i>
+        </p>
+        <div class="job-card__meta">
+          <span class="job-card__location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span></span>
+          </span>
+          <span class="job-card__salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span></span>
+          </span>
+          <span class="job-card__type">
+            <i class="fas fa-briefcase"></i>
+            <span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="job-card__badges">
+      <span class="badge badge-primary" hidden>
+        <i class="fas fa-star"></i>
+        Destacado
+      </span>
+      <span class="badge badge-urgent" hidden>
+        <i class="fas fa-fire"></i>
+        Urgente
+      </span>
+    </div>
+    <p class="job-card__description"></p>
+    <div class="job-card__footer">
+      <span class="job-card__time"></span>
+      <button class="btn btn-primary btn-sm">Ver más</button>
+    </div>
+  </article>
+</template>
+
+<!-- templates/job-detail.html -->
+<template id="job-detail-template">
+  <div class="job-detail">
+    <div class="job-detail__header">
+      <div class="job-detail__company">
+        <div class="company-logo">
+          <img src="" alt="" onerror="this.style.display='none'" />
+        </div>
+        <div class="company-info">
+          <h1 class="company-name"></h1>
+          <div class="company-meta">
+            <span class="company-rating">
+              <i class="fas fa-star"></i>
+              <span></span>
+            </span>
+            <span class="company-size">
+              <i class="fas fa-users"></i>
+              <span></span>
+            </span>
+            <span class="company-location">
+              <i class="fas fa-location-dot"></i>
+              <span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="job-detail__title-section">
+        <h2 class="job-detail__title"></h2>
+        <div class="job-detail__meta">
+          <span class="job-detail__salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span></span>
+          </span>
+          <span class="job-detail__type">
+            <i class="fas fa-briefcase"></i>
+            <span></span>
+          </span>
+          <span class="job-detail__schedule">
+            <i class="fas fa-clock"></i>
+            <span></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="job-detail__actions">
+        <button class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i>
+          Postular ahora
+        </button>
+        <button class="btn btn-secondary">
+          <i class="far fa-bookmark"></i>
+          Guardar empleo
+        </button>
+      </div>
+    </div>
+
+    <div class="job-detail__content">
+      <section class="job-detail__section">
+        <h3 class="section-title">
+          <i class="fas fa-align-left"></i>
+          Descripción del puesto
+        </h3>
+        <div class="job-description"></div>
+      </section>
+
+      <section class="job-detail__section">
+        <h3 class="section-title">
+          <i class="fas fa-list-check"></i>
+          Requisitos
+        </h3>
+        <ul class="requirements-list"></ul>
+      </section>
+
+      <section class="job-detail__section">
+        <h3 class="section-title">
+          <i class="fas fa-gift"></i>
+          Beneficios
+        </h3>
+        <ul class="benefits-list"></ul>
+      </section>
+    </div>
+  </div>
+</template>
